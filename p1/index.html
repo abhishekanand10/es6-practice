@@ -40,18 +40,21 @@ function slct(props){
     return(
         <div>
             <p/> {slct.p}
-            <select/>           
+                      
         </div>
     )
 }
 
-function select(props){
+function opt(props){
     
     return(
         <div>
-    <select>
-        <option>{props.value}</option>
-    </select>
+        <select>
+            <option>{props.val[0]}</option>
+            <option>{props.val[1]}</option>
+            <option>{props.val[2]}</option>
+            <option>{props.val[3]}</option>
+        </select>
     </div>
     )
 }
@@ -78,7 +81,11 @@ function App(){
    return(
         <div>
         <Hdr header="Welcome to React Transportation" p="The best place to buy vehicles online" choose="Choose Options"/>
+        <slct p="Select Type" />
+        <opt value={["All","Cars","Trucks","Convertibles"]}/>
         
+
+
         </div>
     )
 }

@@ -13,6 +13,6 @@ addBtn.addEventListener('click',(e) => {
 });
 
 let viewAllBtn = document.getElementById('viewAllBtn');
-viewAllBtn.addEventListener((e) => {
+viewAllBtn.addEventListener('click',(e) => {
     service.viewTodos('all');
 });

@@ -1,0 +1,22 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "practice app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekanand10/es-app.git"
+  },
+  "author": "Abhishek Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekanand10/es-app/issues"
+  },
+  "homepage": "https://github.com/abhishekanand10/es-app#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
