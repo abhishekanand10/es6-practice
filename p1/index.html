@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+       
+  
+       function Hdr(props) {
+         return(  
+        <div>
+            <h2>{props.header}</h2>
+            <p>{props.p}</p>
+           
+            <h2>{props.choose}</h2>
+        </div>
+    )
+}
+
+function Check(props){
+    return(
+        <div>
+            {props.text}
+            <input checked/>
+        </div>
+    )
+}
+
+function slct(props){
+    return(
+        <div>
+            <p/> {slct.p}
+            <select/>           
+        </div>
+    )
+}
+
+function select(props){
+    
+    return(
+        <div>
+    <select>
+        <option>{props.value}</option>
+    </select>
+    </div>
+    )
+}
+
+function box(props) {
+    return(
+        <div>
+            <h2>{props.header}</h2>
+            <ul>
+                <table>
+                    <tr>
+                        <th>{props.columnh}</th>
+                    </tr>
+                    <tr>
+                        <th>{props.column}</th>
+                    </tr>
+                </table>
+            </ul>
+        </div>
+    )    
+}
+
+function App(){
+   return(
+        <div>
+        <Hdr header="Welcome to React Transportation" p="The best place to buy vehicles online" choose="Choose Options"/>
+        
+        </div>
+    )
+}
+
+    ReactDOM.render(
+      <App/>,
+        document.getElementById("root")
+    )
+
+
+</script>
+</body>
+
+</html>
